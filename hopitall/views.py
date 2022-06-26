@@ -26,6 +26,7 @@ csp = str(BASE_DIR)
 
 def appointements(request,id):
    appointement= Formulaire.objects.all()
+   
 
    return render(request,'appointements.html',{'appointement':appointement})
 
