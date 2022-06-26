@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<h1>Appointements</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>email</th>
+        <th>date</th>
+        <th>Departement</th>
+        <th>Message</th>    
+        
+    </tr>
+
+{% for formulair in appointement %}
+    <tr>
+        <th>{{formulair.name}}</th>
+        <th>{{formulair.email}}</th>
+        <th>{{formulair.date}}</th>
+        <th>{{formulair.departement}}</th>
+        <th>{{formulair.Message}}</th>    
+    </tr>
+
+{% endfor %}
+</table>
+</html>
